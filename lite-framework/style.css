@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url(fonts/product-sans/regular.ttf);
+}
+@font-face {
+    font-family: "Google Sans Medium";
+    src: url(fonts/google-sans/medium.ttf);
+}
+@font-face {
+    font-family: "Google Sans Regular";
+    src: url(fonts/google-sans/regular.ttf);
+}
+@font-face {
+    font-family: "Google Sans Bold";
+    src: url(fonts/google-sans/bold.ttf);
+}
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(fonts/roboto/regular.ttf);
+}
+html {
+    height: 100dvh;
+}
+body {
+    margin: 0;
+    height: 100%;
+}
+
+/* App */
+.app {
+    height: 100%;
+}
+.app__screens {
+    height: 0;
+    position: relative;
+}
+.app__loading {
+    height: 0;
+    opacity: 0;
+}
+
+/* Screen */
+.screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Loading */
+.loading {
+    user-select: none;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.loading__icon {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+.loading__border {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 10px solid #898989;
+    border-radius: 33px;
+}
+.loading__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+}
+.loading__text {
+    font-family: 'Product Sans Regular';
+    font-size: 35px;
+    color: #5f6368;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 0 10dvh 0;
+}
+
+/* Help */
+.help {
+    background-color: #5f6368;
+    color: white;
+    border-radius: 5px;
+    padding: 4px 8px;
+    position: absolute;
+    opacity: 0;
+    font-size: 13px;
+    font-family: 'Google Sans Medium';
+}
